@@ -1,0 +1,76 @@
+/* Table of Content - Pixel Art Maker Style Sheet
+==================================================
+  1.Body and Typography style
+  2.Basic Header Styles
+  3.Grid Table and Common style
+  4.Misc Style
+*/
+
+  /*Body and Typography style
+  =========================*/
+body {
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif !important;
+  }
+  
+  h1 {
+    font-family: Monoton;
+    font-size: 45px;
+    margin: 0.2em;
+  }
+  
+  h2 {
+    margin: 0.5em 0 0.1em;
+    font-size: 25px;
+  }
+  
+  h2:first-of-type {
+    margin-top: 0.2em;
+  }
+  h3 {
+    margin: 0.5em 0 0.1em;
+    font-size: 20px;
+  }
+
+
+  /*The Grid Table Styles
+  =========================*/
+  table,
+  tr,
+  td {
+    border: 1px solid #00bcd4;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+    tr {
+      height: 20px;
+    }
+    
+    td {
+      width: 20px;
+    }
+    
+    input[type="number"] {
+      width: 8em;
+      padding: 5px;
+      margin: 0px 10px 0px 0px;
+    }
+
+  /*Misc Style
+  =========================*/
+  #submitButton {
+    padding: 5px 15px;
+    border-radius: 2px;
+    border-color: aliceblue;
+    font-weight: 800;
+    color: #2196F3;
+    background-color: #BBDEFB;
+  }
+  
+  #colorPicker {
+    width: 10em;
+  }
