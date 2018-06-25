@@ -19,7 +19,7 @@ const height = document.querySelector('#inputHeight');
 // Select size input by Width
 const width = document.querySelector('#inputWidth');
 
-
+//Misc Function
 function clearOldGrid() {
     // clears the old grid first
     canvas.innerHTML = '';
