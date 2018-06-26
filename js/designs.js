@@ -51,7 +51,7 @@ function changeCellColor() {
         if (e.target.nodeName === 'TD') {
             e.target.style.backgroundColor = color.value;
         }
-    })
+    });
 }
 
 /*Event Listener 
@@ -63,4 +63,4 @@ Also clears or resets previous grid settings and presents with fresh canvas to s
     clearOldGrid();
     makeGrid();
     changeCellColor();
-})
+});
