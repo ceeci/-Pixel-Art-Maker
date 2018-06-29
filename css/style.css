@@ -15,13 +15,13 @@ body {
   
   h1 {
     font-family: Monoton;
-    font-size: 45px;
+    font-size: 2.25em;
     margin: 0.2em;
   }
   
   h2 {
     margin: 0.5em 0 0.1em;
-    font-size: 25px;
+    font-size: 1.25em;
   }
   
   h2:first-of-type {
@@ -29,7 +29,7 @@ body {
   }
   h3 {
     margin: 0.5em 0 0.1em;
-    font-size: 20px;
+    font-size: 1em;
   }
 
   /*The Grid Table Styles
@@ -37,7 +37,7 @@ body {
   table,
   tr,
   td {
-    border: 1px solid #00bcd4;
+    border: 0.05em solid #00bcd4;
   }
   
   table {
@@ -46,24 +46,24 @@ body {
   }
   
     tr {
-      height: 20px;
+      height: 1em;
     }
     
     td {
-      width: 20px;
+      width: 1em;
     }
     
     input[type="number"] {
       width: 8em;
-      padding: 5px;
-      margin: 0 10px 0 0;
+      padding: 0.25em;
+      margin: 0 0.50em 0 0;
     }
 
   /*Misc Style
   =========================*/
   #submitButton {
-    padding: 5px 15px;
-    border-radius: 2px;
+    padding: 0.25 0.75em;
+    border-radius: 0.10em;
     border-color: aliceblue;
     font-weight: 800;
     color: #2196F3;
