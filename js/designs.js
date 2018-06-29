@@ -1,7 +1,7 @@
 /* Table of Content - Pixel Art Maker JavaScript
 ==================================================
   1.Input Selectors
-  2.Make Grid Function
+  2.Make Grid Function 
   3.Change Cell Color Function
   4.Event Listener
 */
