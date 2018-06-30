@@ -72,7 +72,6 @@ td {
     height: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
-
 }
 
 
@@ -94,7 +93,6 @@ input[type="number"] {
 #colorPicker {
     width: 10em;
 }
-
 
 /*Button Styles*/
 .button {
@@ -146,7 +144,6 @@ input[type="number"] {
     opacity: 1;
     right: 0;
 }
-
 
 /* Style the side bar */
 .sidenav {
