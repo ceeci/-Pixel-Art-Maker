@@ -36,8 +36,9 @@ function clearPixelArt() {
     artCanvas.empty();
 }
 // addEventListeners for Activities
-$("table").on("click", "td", function() {
-    $(this).css("backgroundColor", color.val());
+$("table").on("click", "td", function(){
+        //apply color -- undo and redo effect
+        ($( this ).attr('style')) ? $(this).css("backgroundColor", "") : $(this).css("backgroundColor", color.val());
 });
 
 $("#submitButton").on("click", function(event) {
