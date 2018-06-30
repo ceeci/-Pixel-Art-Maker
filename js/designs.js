@@ -3,7 +3,7 @@
   1.Input Selectors (Constant Variables)
   2.Make Grid Function 
   3.Change Cell Color Function
-  4.Event Listener
+  4.Event Listeners
 
 Input Selectors 
 =====================*/
@@ -39,10 +39,6 @@ function clearPixelArt() {
 $("table").on("click", "td", function() {
     $(this).css("backgroundColor", color.val());
 });
-
-// $("table").on("click", "td", function() {
-//         $(this).css("border-color", color.val());
-// });
 
 $("#submitButton").on("click", function(event) {
 
