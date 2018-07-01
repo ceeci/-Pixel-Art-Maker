@@ -1,9 +1,12 @@
 /* Table of Content - Pixel Art Maker Style Sheet
 ==================================================
 1.Body and Typography style
-2.Basic Header Styles
-3.Grid Table and Common style
-4.Misc Style
+2.The Grid Table Styles
+3.Button Styles
+4.Side bar Styles
+5.Content Styles
+6.Footer Styling
+7.Misc Style
 */
 
 /*Body and Typography style
@@ -15,11 +18,11 @@ body {
     background-color: #f2f2f2;
 }
 
-h1 {
+/*h1 {
     font-family: Monoton;
     font-size: 45px;
     margin: 0.2em;
-}
+}*/
 
 h2 {
     margin: 0.5em 0 0.1em;
@@ -54,6 +57,7 @@ div {
 
 /*The Grid Table Styles
 =========================*/
+
 table {
     border-collapse: collapse;
     margin: 0 auto;
@@ -72,8 +76,8 @@ td {
     height: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
-}
 
+}
 
 input[type="number"] {
     width: 90%;
@@ -84,17 +88,8 @@ input[type="number"] {
     border: 1px solid #ccc;
 }
 
-/*Misc Style
+/*Button Styles
 =========================*/
-#sizePicker {
-    margin: 15px;
-}
-
-#colorPicker {
-    width: 10em;
-}
-
-/*Button Styles*/
 .button {
     display: inline-block;
     border-radius: 4px;
@@ -108,15 +103,18 @@ input[type="number"] {
     /* margin: 5px;*/
 }
 
-/*Button Colors*/
-.create {
+/*Button Colors and Effects*/
+.btn-create {
     background-color: #4caf50;
     width: 100%;
 }
-.clean {
+
+.btn-clean {
     background-color: #e91e63;
+
 }
-.remove {
+
+.btn-remove {
     background-color: #000;
 }
 
@@ -145,7 +143,8 @@ input[type="number"] {
     right: 0;
 }
 
-/* Style the side bar */
+/* Side bar Styles
+=========================*/
 .sidenav {
     height: 100%;
     width: 20%;
@@ -153,15 +152,39 @@ input[type="number"] {
     z-index: 1;
     top: 0;
     left: 0;
-    background: #ccc url("../pixel_bg2.jpg") no-repeat right top;
+    background: #ccc url("pixel_bg2.jpg") no-repeat right top;
     overflow-x: hidden;
 }
 
-/* Style the content */
+/* Content Styles
+=========================*/
 .content {
     margin-top: 40px;
     margin-left: 22%;
     padding-left: 20px;
+    min-height: 500px;
+}
+
+/*Footer Styling
+=========================*/
+.footer {
+    width: 80%;
+    background-color: #fff;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+/*Misc Style
+=========================*/
+
+#sizePicker {
+    margin: 15px;
+}
+
+#colorPicker {
+    width: 10em;
 }
 
 .artParameters {
