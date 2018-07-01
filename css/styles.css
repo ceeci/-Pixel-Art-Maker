@@ -18,9 +18,7 @@ body {
     background-color: #f2f2f2;
     
 }
-.row {
-    display: flex;
-}
+
 /*h1 {
     font-family: Monoton;
     font-size: 45px;
@@ -162,7 +160,6 @@ input[type="number"] {
 /* Content Styles
 =========================*/
 .content {
-    width: 80%;
     margin-top: 40px;
     margin-left: 22%;
     padding-left: 20px;
