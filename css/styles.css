@@ -147,7 +147,7 @@ input[type="number"] {
 =========================*/
 .sidenav {
     height: 100%;
-    width: 20%;
+    flex: 20%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -159,6 +159,7 @@ input[type="number"] {
 /* Content Styles
 =========================*/
 .content {
+    flex: 80%;
     margin-top: 40px;
     margin-left: 22%;
     padding-left: 20px;
