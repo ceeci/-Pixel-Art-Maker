@@ -114,7 +114,6 @@ input[type="number"] {
 
 .btn-clean {
     background-color: #e91e63;
-
 }
 
 .btn-remove {
@@ -181,7 +180,6 @@ input[type="number"] {
 
 /*Misc Style
 =========================*/
-
 #sizePicker {
     margin: 15px;
 }
@@ -198,7 +196,7 @@ input[type="number"] {
 /* Responsive layout - when the screen is less than 700px wide, make the two 
 columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 720px) {
-    .row, .content, #sizePicker {   
+    .row, .content {   
         flex-direction: column;
     }
 }
