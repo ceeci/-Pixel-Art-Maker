@@ -8,7 +8,9 @@
 6.Footer Styling
 7.Misc Style
 */
-
+* {
+    box-sizing: border-box;
+}
 /*Body and Typography style
 =========================*/
 body {
