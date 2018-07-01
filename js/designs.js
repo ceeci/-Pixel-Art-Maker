@@ -2,8 +2,7 @@
 ==================================================
   1.Input Selectors (Constant Variables)
   2.Make Grid Function 
-  3.Change Cell Color Function
-  4.Event Listeners
+  3.Event Listeners
 
 Input Selectors 
 =====================*/
@@ -17,9 +16,10 @@ const color = $("#colorPicker");
 const artCanvas = $("#pixelCanvas");
 
 
-//makeGrid function that removes previous table and then new grid is built with help of for-loop using jQuery Selectors
+/*Make Grid Function 
+=====================*/
 function makeGrid() {
-
+  //makeGrid function creates create pixel grid canvas with the help of for-loop using jQuery Selectors
     let heightValue = height.val();
     let widthValue = width.val();
 
@@ -32,29 +32,39 @@ function makeGrid() {
     }    
 }
 
+//Clear default parent styles elements if present
 function clearPixelArt() {
     artCanvas.empty();
 }
-// addEventListeners for Activities
+
+/*Event Listeners
+=====================*/
+//Event Listeners for Click Activities
 $("table").on("click", "td", function(){
-        //apply color -- undo and redo effect
-        ($( this ).attr('style')) ? $(this).css("backgroundColor", "") : $(this).css("backgroundColor", color.val());
+  //This toggles between coloring and undoing
+    ($( this ).attr('style')) ? $(this).css("backgroundColor", "") : $(this).css("backgroundColor", color.val());
 });
 
+//Binding makeGrid function with clearing any default styles if present.
 $("#submitButton").on("click", function(event) {
-
-//Also clears or resets previous grid settings and presents with fresh canvas to start a new grid.
+//This clears or resets previous grid settings and presents with fresh canvas to start a new grid.
     clearPixelArt();
     event.preventDefault();
-    // When size is submitted by the user, call makeGrid() function to create pixel grid canvas. 
+    // When size is submitted by the user, call makeGrid() function creates pixel grid canvas. 
     makeGrid();
 });
 
-$("#submitButton2").on("click", function() {
+$("#removeGrid").on("click", function() {
+  //Removes Grid table elements
     clearPixelArt();
 });
 
-$("#newPixelArt").click(function(event){
+$("#cleanGrid").click(function(event){
+  //Clears off pixel art on the canvas using removeAttr
     $("td").removeAttr("style");
     event.preventDefault();
 });
+
+// $("table").on("click", "td", function() {
+//     $(this).css("border-color", color.val());
+// });
