@@ -16,9 +16,11 @@ body {
     font: 12px 'Montserrat', sans-serif !important;
     margin: 0;
     background-color: #f2f2f2;
+    
+}
+.row {
     display: flex;
 }
-
 /*h1 {
     font-family: Monoton;
     font-size: 45px;
