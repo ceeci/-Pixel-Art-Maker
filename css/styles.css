@@ -192,3 +192,10 @@ input[type="number"] {
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/* Responsive layout - when the screen is less than 700px wide, make the two 
+columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 720px) {
+    .row, .content, #sizePicker {   
+        flex-direction: column;
+    }
+}
