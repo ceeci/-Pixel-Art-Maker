@@ -1,3 +1,4 @@
+![Image of Pixel Art Work](https://github.com/ceeci/Pixel-Art-Maker/blob/master/pixel_art_final.png)
 # Udacity Project - Pixel Art Maker Starter
 ###alcwithgoogle3.0 batch
 ## Pixel-Art-Maker
